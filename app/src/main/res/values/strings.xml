@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Portaria_Trabalho</string>
+    <string name="nome">Nome</string>
+    <string name="senha">Senha</string>
+    <string name="lembrar_senha">Lembrar Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="criar_conta">Criar Conta</string>
+    <string name="digite_seu_nome">Digite seu nome</string>
+    <string name="todo">TODO</string>
+    <string name="digite_sua_senha">Digite sua senha</string>
+    <string name="title_activity_cadastro_login">CadastroLoginActivity</string>
+    <string name="cancelar">Cancelar</string>
 </resources>
