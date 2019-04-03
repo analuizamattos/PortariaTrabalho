@@ -10,4 +10,12 @@
     <string name="digite_sua_senha">Digite sua senha</string>
     <string name="title_activity_cadastro_login">CadastroLoginActivity</string>
     <string name="cancelar">Cancelar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="button">Button</string>
+    <string name="criar">Criar</string>
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="confirme_senha">Confirme senha</string>
+    <string name="nome">Nome</string>
 </resources>
