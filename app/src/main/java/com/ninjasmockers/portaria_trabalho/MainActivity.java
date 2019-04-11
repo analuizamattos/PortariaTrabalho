@@ -18,10 +18,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void cadastroLogin(View view){
-        startActivity(new Intent(this,CadastroLogin.class));
+        startActivity(new Intent(this, CadastroLogin.class));
     }
 
     protected void login(View view) {
+        startActivity(new Intent(this, AutorizadosActivity.class));
+    }
+
+    protected void callCalendar(View view) {
         Intent intent = new Intent();
         ComponentName componentName = new ComponentName("com.google.android.calendar", "com.android.calendar.LaunchActivity");
         intent.setComponent(componentName);
