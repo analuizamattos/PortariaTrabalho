@@ -4,6 +4,10 @@ buildscript {
     repositories {
         google()
         jcenter()
+        configurations {
+            cleanedAnnotations
+            compile.exclude group: 'org.jetbrains' , module:'annotations'
+        }
         
     }
     dependencies {
