@@ -14,4 +14,15 @@
     <string name="criar">Criar</string>
     <string name="email">Email</string>
     <string name="confirme_senha">Confirme senha</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="placa_do_carro">Placa do Carro</string>
+    <string name="salvar">SALVAR</string>
+    <string name="pessoas_autorizadas">Pessoas autorizadas</string>
+    <string name="lista_de_pessoas_autorizadas">Lista de pessoas autorizadas</string>
+    <string name="inserir_autoriza_o">Inserir autorização</string>
+    <string name="cadastro_de_visitante">Cadastro de Visitante</string>
+    <string name="rg">RG</string>
+    <string name="placa_do_carro">Placa do Carro</string>
+    <string name="name">Name</string>
+    <string name="sobre_nome">Sobre Nome</string>
 </resources>
