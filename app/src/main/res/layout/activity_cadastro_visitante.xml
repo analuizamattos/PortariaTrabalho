@@ -73,14 +73,14 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="23dp"
         android:layout_marginRight="23dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/name"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/etSobreNome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nome"
-        android:autofillHints="" />
+        app:layout_constraintStart_toEndOf="@+id/nome" />
 
     <EditText
         android:id="@+id/etPlacaDoCarro"
@@ -103,6 +103,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="6dp"
         android:layout_marginRight="6dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/sobre_nome"
@@ -110,8 +111,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/sobrenome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/sobrenome"
-        app:layout_constraintTop_toBottomOf="@+id/sobrenome"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/sobrenome" />
 
     <EditText
         android:id="@+id/etRG"
@@ -119,19 +119,20 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="6dp"
         android:layout_marginRight="6dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="numberSigned"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/RG"
         app:layout_constraintTop_toBottomOf="@+id/etPlacaDoCarro"
-        tools:text="RG"
-        android:autofillHints="" />
+        tools:text="RG" />
 
     <Button
         android:id="@+id/btCancelar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="home"
         android:text="@string/cancelar"
         app:layout_constraintBaseline_toBaselineOf="@+id/btSalvar"
         app:layout_constraintStart_toStartOf="@+id/RG" />
@@ -143,6 +144,7 @@
         android:layout_marginTop="46dp"
         android:layout_marginEnd="18dp"
         android:layout_marginRight="18dp"
+        android:onClick="home"
         android:text="@string/salvar"
         app:layout_constraintEnd_toEndOf="@+id/etRG"
         app:layout_constraintTop_toBottomOf="@+id/etRG" />

@@ -22,7 +22,6 @@
     <string name="inserir_autoriza_o">Inserir autorização</string>
     <string name="cadastro_de_visitante">Cadastro de Visitante</string>
     <string name="rg">RG</string>
-    <string name="placa_do_carro">Placa do Carro</string>
     <string name="name">Name</string>
     <string name="sobre_nome">Sobre Nome</string>
 </resources>

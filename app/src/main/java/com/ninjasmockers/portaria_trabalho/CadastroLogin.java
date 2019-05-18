@@ -12,11 +12,12 @@ public class CadastroLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_login);
     }
-    protected void salvarLogin(){
-
-    }
+        protected void criar(View view){
+            startActivity(new Intent(this,MainActivity.class));
+        }
 
     protected void cancelar(View view){
         startActivity(new Intent(this,MainActivity.class));
+
     }
 }
