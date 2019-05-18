@@ -10,15 +10,15 @@
         android:id="@+id/cancelar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="85dp"
-        android:layout_marginLeft="85dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
         android:layout_marginBottom="70dp"
         android:onClick="cancelar"
         android:text="@string/cancelar"
         android:textColor="@android:color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/criar" />
 
     <Button
         android:id="@+id/criar"
@@ -26,10 +26,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
-        android:layout_marginBottom="70dp"
         android:onClick="cancelar"
         android:text="@string/criar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cancelar"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
@@ -37,101 +36,98 @@
         android:layout_width="wrap_content"
         android:layout_height="19dp"
         android:layout_marginTop="87dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginRight="7dp"
         android:layout_marginBottom="91dp"
         android:text="@string/nome"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/etemail"
         app:layout_constraintEnd_toStartOf="@+id/etNome"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="19dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
         android:text="@string/email"
         android:textSize="14sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/etemail"
-        app:layout_constraintEnd_toStartOf="@+id/etsenha" />
+        app:layout_constraintEnd_toStartOf="@+id/etemail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/senha"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
         android:text="@string/senha"
         android:textSize="14sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/etsenha"
-        app:layout_constraintEnd_toStartOf="@+id/editText4" />
+        app:layout_constraintEnd_toStartOf="@+id/etsenha"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/confirmesenha"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginLeft="19dp"
         android:text="@string/confirme_senha"
         android:textSize="14sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/editText4"
+        app:layout_constraintEnd_toStartOf="@+id/editText4"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/etNome"
-        android:layout_width="163dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
+        android:layout_marginTop="77dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Nome"
         android:textSize="14sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/nome"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/etemail"
+        app:layout_constraintStart_toStartOf="@+id/etemail"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="157dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Email"
         android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/email"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNome" />
 
     <EditText
         android:id="@+id/etsenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
         android:layout_marginTop="22dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPassword"
         android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/senha"
+        app:layout_constraintStart_toStartOf="@+id/etemail"
         app:layout_constraintTop_toBottomOf="@+id/etemail" />
 
     <EditText
         android:id="@+id/editText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPassword"
         android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/confirmesenha"
+        app:layout_constraintStart_toStartOf="@+id/etsenha"
         app:layout_constraintTop_toBottomOf="@+id/etsenha" />
 
 </android.support.constraint.ConstraintLayout>

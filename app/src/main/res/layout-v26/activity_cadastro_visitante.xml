@@ -14,12 +14,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:layout_marginBottom="67dp"
         android:text="@string/cadastro_de_visitante"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/nome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,157 +26,133 @@
         android:id="@+id/nome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginBottom="21dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="36dp"
         android:text="@string/nome"
         app:layout_constraintBottom_toTopOf="@+id/sobrenome"
-        app:layout_constraintEnd_toStartOf="@+id/etNome"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cadastroVistante" />
+        app:layout_constraintEnd_toEndOf="@+id/placaDoCarro"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/sobrenome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="18dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
         android:text="@string/sobrenome"
-        app:layout_constraintBottom_toTopOf="@+id/placaDoCarro"
-        app:layout_constraintEnd_toStartOf="@+id/etSobreNome"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nome" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/etSobreNome"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/placaDoCarro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
         android:text="@string/placa_do_carro"
-        app:layout_constraintBottom_toTopOf="@+id/etRG"
-        app:layout_constraintEnd_toStartOf="@+id/etPlacaDoCarro"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sobrenome" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/etPlacaDoCarro"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/RG"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginBottom="49dp"
         android:text="@string/rg"
-        app:layout_constraintEnd_toStartOf="@+id/etRG"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/placaDoCarro" />
+        app:layout_constraintBottom_toTopOf="@+id/btCancelar"
+        app:layout_constraintStart_toStartOf="@+id/placaDoCarro"
+        app:layout_constraintTop_toTopOf="@+id/placaDoCarro" />
 
     <EditText
         android:id="@+id/etNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="21dp"
-        android:layout_marginRight="21dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/name"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/etSobreNome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nome" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/etPlacaDoCarro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/placa_do_carro"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/etRG"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/placaDoCarro" />
+        app:layout_constraintStart_toStartOf="@+id/etSobreNome"
+        app:layout_constraintTop_toBottomOf="@+id/etSobreNome" />
 
     <EditText
         android:id="@+id/etSobreNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
+        android:layout_marginTop="16dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/sobre_nome"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/sobrenome"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/sobrenome"
-        app:layout_constraintTop_toBottomOf="@+id/sobrenome" />
+        app:layout_constraintStart_toStartOf="@+id/etNome"
+        app:layout_constraintTop_toBottomOf="@+id/etNome" />
 
     <EditText
         android:id="@+id/etRG"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginBottom="23dp"
+        android:layout_marginTop="8dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="numberSigned"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/RG"
-        app:layout_constraintTop_toBottomOf="@+id/placaDoCarro"
+        app:layout_constraintStart_toStartOf="@+id/etPlacaDoCarro"
+        app:layout_constraintTop_toBottomOf="@+id/etPlacaDoCarro"
         tools:text="RG" />
 
     <Button
         android:id="@+id/btCancelar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:layout_marginLeft="7dp"
-        android:layout_marginTop="27dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
         android:onClick="home"
         android:text="@string/cancelar"
-        app:layout_constraintEnd_toStartOf="@+id/btSalvar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/etRG" />
 
     <Button
         android:id="@+id/btSalvar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="253dp"
+        android:layout_width="97dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
         android:onClick="home"
         android:text="@string/salvar"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btCancelar"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/etRG" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="170dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginLeft="76dp"
-        android:layout_marginEnd="75dp"
-        android:layout_marginRight="75dp"
-        android:layout_marginBottom="27dp"
-        app:layout_constraintBottom_toTopOf="@+id/btSalvar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/RG"
-        app:layout_constraintTop_toBottomOf="@+id/etRG">
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
             android:id="@+id/rbPrestadorDeServico"
