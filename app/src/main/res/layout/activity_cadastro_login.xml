@@ -49,7 +49,7 @@
         android:text="@string/nome"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/email"
-        app:layout_constraintEnd_toStartOf="@+id/etNome"
+        app:layout_constraintEnd_toStartOf="@+id/editNome"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -106,7 +106,7 @@
         app:layout_constraintTop_toBottomOf="@+id/senha" />
 
     <EditText
-        android:id="@+id/etNome"
+        android:id="@+id/editNome"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="73dp"
@@ -140,7 +140,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/email"
-        app:layout_constraintTop_toBottomOf="@+id/etNome" />
+        app:layout_constraintTop_toBottomOf="@+id/editNome" />
 
     <EditText
         android:id="@+id/etsenha"

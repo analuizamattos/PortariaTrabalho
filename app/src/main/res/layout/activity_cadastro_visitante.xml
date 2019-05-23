@@ -27,7 +27,7 @@
         android:layout_marginLeft="17dp"
         android:layout_marginTop="139dp"
         android:text="@string/nome"
-        app:layout_constraintEnd_toStartOf="@+id/etNome"
+        app:layout_constraintEnd_toStartOf="@+id/editNome"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toBottomOf="@+id/placaDoCarro" />
 
     <EditText
-        android:id="@+id/etNome"
+        android:id="@+id/editNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="23dp"
