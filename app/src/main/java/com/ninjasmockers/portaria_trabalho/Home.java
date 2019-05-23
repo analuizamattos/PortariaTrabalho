@@ -16,4 +16,7 @@ public class Home extends AppCompatActivity {
     protected void inserir(View view){
         startActivity(new Intent(this,CadastroVisitante.class));
     }
+    protected void sair(View view){
+        startActivity(new Intent(this,MainActivity.class));
+    }
 }

@@ -22,71 +22,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/nome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="39dp"
-        android:layout_marginLeft="39dp"
-        android:layout_marginEnd="38dp"
-        android:layout_marginRight="38dp"
-        android:layout_marginBottom="36dp"
-        android:text="@string/nome"
-        app:layout_constraintBottom_toTopOf="@+id/sobrenome"
-        app:layout_constraintEnd_toEndOf="@+id/placaDoCarro"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/sobrenome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:layout_marginLeft="29dp"
-        android:text="@string/sobrenome"
-        app:layout_constraintBaseline_toBaselineOf="@+id/etSobreNome"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/placaDoCarro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginLeft="22dp"
-        android:text="@string/placa_do_carro"
-        app:layout_constraintBaseline_toBaselineOf="@+id/etPlacaDoCarro"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/RG"
-        android:layout_width="wrap_content"
-        android:layout_height="18dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="49dp"
-        android:layout_marginBottom="49dp"
-        android:text="@string/rg"
-        app:layout_constraintBottom_toTopOf="@+id/btCancelar"
-        app:layout_constraintStart_toStartOf="@+id/placaDoCarro"
-        app:layout_constraintTop_toTopOf="@+id/placaDoCarro" />
-
     <EditText
-        android:id="@+id/editNome"
-        android:layout_width="wrap_content"
+        android:id="@+id/editNomeId"
+        android:layout_width="229dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="212dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="54dp"
         android:layout_marginRight="54dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/name"
+        android:text="@string/digite_seu_nome"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.622"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroVistante" />
 
     <EditText
         android:id="@+id/etPlacaDoCarro"
-        android:layout_width="wrap_content"
+        android:layout_width="229dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
@@ -98,7 +55,7 @@
 
     <EditText
         android:id="@+id/etSobreNome"
-        android:layout_width="wrap_content"
+        android:layout_width="228dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:autofillHints=""
@@ -106,17 +63,18 @@
         android:inputType="textPersonName"
         android:text="@string/sobre_nome"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="@+id/editNome"
-        app:layout_constraintTop_toBottomOf="@+id/editNome" />
+        app:layout_constraintStart_toStartOf="@+id/editNomeId"
+        app:layout_constraintTop_toBottomOf="@+id/editNomeId" />
 
     <EditText
         android:id="@+id/etRG"
-        android:layout_width="wrap_content"
+        android:layout_width="229dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="numberSigned"
+        android:text="@string/rg"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/etPlacaDoCarro"
         app:layout_constraintTop_toBottomOf="@+id/etPlacaDoCarro"
