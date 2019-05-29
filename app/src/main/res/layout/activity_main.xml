@@ -121,7 +121,10 @@
             android:id="@+id/TextInputNome"
             android:layout_width="307dp"
             android:layout_height="54dp"
-            android:hint="Digite seu nome" />
+            android:hint="Digite seu nome"
+            android:lines="1"
+            android:nextFocusDown="@id/TextInputSenha"
+            android:singleLine="true" />
 
     </android.support.design.widget.TextInputLayout>
 
@@ -143,7 +146,9 @@
             android:id="@+id/TextInputSenha"
             android:layout_width="match_parent"
             android:layout_height="49dp"
-            android:hint="Digite sua senha" />
+            android:hint="Digite sua senha"
+            android:nextFocusDown="@id/entrar"
+            android:singleLine="true" />
     </android.support.design.widget.TextInputLayout>
 
 </android.support.constraint.ConstraintLayout>
