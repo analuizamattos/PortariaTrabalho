@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Concierge Work</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="remember_password">Remember Password</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create an Account</string>
+    <string name="type_your_name">Type Your Name</string>
+    <string name="all">ALL</string>
+    <string name="type_your_password">Type Your Password</string>
+    <string name="title_activity_cadastro_login">CadastroLoginActivity</string>
+    <string name="cancel">Cancel</string>
+    <string name="button">Button</string>
+    <string name="create">Create</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="last_name">Last Name</string>
+    <string name="license_plate">License Plate</string>
+    <string name="save">SAVE</string>
+    <string name="authorized_persons">Authorized Persons</string>
+    <string name="authorized_persons_list">Authorized Persons List</string>
+    <string name="insert_authorization">Insert Authorization</string>
+    <string name="visit_register">Visit Register</string>
+    <string name="rg">RG</string>
+    <string name="name">Name</string>
+    <string name="last_name_name">Last Name</string>
+</resources>
