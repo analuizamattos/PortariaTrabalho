@@ -1,4 +1,4 @@
-package com.ninjasmockers.portaria_trabalho;
+package com.ninjasmockers.portaria_trabalho.config;
 
 import android.content.Context;
 import android.content.SharedPreferences;

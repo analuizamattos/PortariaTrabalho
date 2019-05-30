@@ -1,9 +1,11 @@
-package com.ninjasmockers.portaria_trabalho;
+package com.ninjasmockers.portaria_trabalho.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.ninjasmockers.portaria_trabalho.R;
 
 public class CadastroLogin extends AppCompatActivity {
 

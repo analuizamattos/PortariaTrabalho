@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:addStatesFromChildren="false"
     tools:actionBarNavMode="standard"
-    tools:context=".CadastroVisitante">
+    tools:context=".activities.CadastroVisitante">
 
     <TextView
         android:id="@+id/cadastroVistante"

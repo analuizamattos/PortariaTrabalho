@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.READ_CALENDAR" />
     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,10 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CadastroVisitante"></activity>
-        <activity android:name=".Home" />
-        <activity android:name=".CadastroLogin" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.CadastroVisitante"></activity>
+        <activity android:name=".activities.Home" />
+        <activity android:name=".activities.CadastroLogin" />
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
