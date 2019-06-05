@@ -22,4 +22,23 @@ public class Util {
 
         return imagem;
     }
+
+    public static String buscarPiada() throws IOException {
+        String endereco = "https://api.chucknorris.io/jokes/random";
+
+        URL url = new URL(endereco);
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        connection.connect();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
+
+        StringBuffer buffer = new StringBuffer();
+        String line = "";
+
+        while ((line = reader.readLine()) != null) {
+            buffer.append(line);
+        }
+        
+        JSONObject mainObject = new JSONObject(buffer.toString());
+        return mainObject.getJsonString("value");
+    }
 }
