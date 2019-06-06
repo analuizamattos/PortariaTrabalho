@@ -1,4 +1,4 @@
-package com.ninjasmockers.portaria_trabalho.utils;
+package com.ninjasmockers.portaria_trabalho.service;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class Util {
+public class WebService {
 
     public static Bitmap baixarImagem(String url) throws IOException {
         URL endereco;
@@ -36,14 +36,14 @@ public class Util {
         InputStream stream = connection.getInputStream();
         BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
 
-        StringBuffer buffer = new StringBuffer();
+        StringBuilder jsonText = new StringBuilder();
         String line;
 
         while ((line = reader.readLine()) != null) {
-            buffer.append(line);
+            jsonText.append(line);
         }
         try {
-            JSONObject mainObject = new JSONObject(buffer.toString());
+            JSONObject mainObject = new JSONObject(jsonText.toString());
             return mainObject.getString("value");
         } catch (Exception e) {
             return null;

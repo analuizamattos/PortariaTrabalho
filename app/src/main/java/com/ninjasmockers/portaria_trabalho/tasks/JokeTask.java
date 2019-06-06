@@ -2,29 +2,28 @@ package com.ninjasmockers.portaria_trabalho.tasks;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.ninjasmockers.portaria_trabalho.service.WebService;
 
 import java.io.IOException;
 
-public class DownloadTask extends AsyncTask<String, Void, Bitmap> {
+public class JokeTask extends AsyncTask<String, Void, String> {
     private ProgressDialog load;
-    private ImageView imagem;
     private Context contexto;
+    private TextView jokeText;
 
-    public DownloadTask(Context contexto, ImageView imagem) {
-        this.imagem = imagem;
+    public JokeTask(Context contexto, TextView jokeText) {
         this.contexto = contexto;
+        this.jokeText = jokeText;
     }
 
     @Override
-    protected Bitmap doInBackground(String... strings) {
+    protected String doInBackground(String... strings) {
         try{
-            return WebService.baixarImagem(strings[0]);
+            return WebService.buscarPiada();
         }catch (IOException e){
             Log.i("AsyncTask", e.getMessage());
         }
@@ -34,13 +33,13 @@ public class DownloadTask extends AsyncTask<String, Void, Bitmap> {
     @Override
     protected void onPreExecute(){
         load = ProgressDialog.show(contexto, "Por favor Aguarde ...",
-                "Baixando Imagem ...");
+                "Baixando dados da Chuck Norrias API ...");
     }
 
     @Override
-    protected void onPostExecute(Bitmap bitmap){
-        if(bitmap!=null) {
-            imagem.setImageBitmap(bitmap);
+    protected void onPostExecute(String piada){
+        if(jokeText!=null) {
+            jokeText.setText(piada);
         }
         load.dismiss();
     }

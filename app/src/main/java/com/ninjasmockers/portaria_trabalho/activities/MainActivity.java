@@ -11,10 +11,12 @@ import android.widget.TextView;
 import com.ninjasmockers.portaria_trabalho.config.Preferencias;
 import com.ninjasmockers.portaria_trabalho.R;
 import com.ninjasmockers.portaria_trabalho.tasks.DownloadTask;
+import com.ninjasmockers.portaria_trabalho.tasks.JokeTask;
 
 public class MainActivity extends AppCompatActivity {
     private Preferencias preferencias;
-    private TextView nome ;
+    private TextView nome;
+    private TextView jokeText;
     private TextInputEditText nomeDigitado;
     private ImageView imagem;
 
@@ -25,17 +27,24 @@ public class MainActivity extends AppCompatActivity {
         preferencias = new Preferencias(getApplicationContext());
         nome = findViewById(R.id.textViewNome);
         imagem = findViewById(R.id.imageView);
+        jokeText = findViewById(R.id.jokeText);
 
         String valor = preferencias.recuperaAnotacao();
         nome.setText(valor);
 
         String endereco = "https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg";
         chamarAsyncTask(endereco);
+        chamarJokeTask();
     }
 
     private void chamarAsyncTask(String endereco){
         DownloadTask download = new DownloadTask(MainActivity.this, imagem);
         download.execute(endereco);
+    }
+
+    private void chamarJokeTask(){
+        JokeTask download = new JokeTask(MainActivity.this, jokeText);
+        download.execute();
     }
 
     protected void cadastroLogin(View view){
