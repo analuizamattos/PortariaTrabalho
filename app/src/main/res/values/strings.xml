@@ -6,7 +6,7 @@
     <string name="entrar">Entrar</string>
     <string name="criar_conta">Criar Conta</string>
     <string name="digite_seu_nome">Digite seu nome</string>
-    <string name="todo">TODO</string>
+
     <string name="digite_sua_senha">Digite sua senha</string>
     <string name="title_activity_cadastro_login">CadastroLoginActivity</string>
     <string name="cancelar">Cancelar</string>
@@ -22,6 +22,6 @@
     <string name="inserir_autoriza_o">Inserir autorização</string>
     <string name="cadastro_de_visitante">Cadastro de Visitante</string>
     <string name="rg">RG</string>
-    <string name="name">Name</string>
-    <string name="sobre_nome">Sobre Nome</string>
+
+    <string name="sair">Sair</string>
 </resources>

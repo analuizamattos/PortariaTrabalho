@@ -12,7 +12,6 @@
         android:layout_height="81dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="12dp"
-        android:contentDescription="@string/todo"
         android:src="@drawable/android"
         app:layout_constraintBottom_toTopOf="@+id/textViewNome"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,19 +75,16 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
         android:background="@color/colorAccent"
         android:onClick="cadastroLogin"
         android:text="@string/criar_conta"
         android:textColor="@android:color/black"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/entrar"
-        app:layout_constraintVertical_bias="0.017" />
+        app:layout_constraintTop_toBottomOf="@+id/entrar" />
 
     <TextView
         android:id="@+id/textViewNome"
@@ -112,7 +108,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:hint="@string/digite_seu_nome"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewNome">
@@ -121,7 +117,7 @@
             android:id="@+id/TextInputNome"
             android:layout_width="307dp"
             android:layout_height="54dp"
-            android:hint="Digite seu nome"
+            android:hint="@string/digite_seu_nome"
             android:lines="1"
             android:nextFocusDown="@id/TextInputSenha"
             android:singleLine="true" />
@@ -137,7 +133,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:hint="Digite sua senha"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
@@ -146,7 +142,7 @@
             android:id="@+id/TextInputSenha"
             android:layout_width="match_parent"
             android:layout_height="49dp"
-            android:hint="Digite sua senha"
+            android:hint="@string/digite_sua_senha"
             android:nextFocusDown="@id/entrar"
             android:singleLine="true" />
     </android.support.design.widget.TextInputLayout>

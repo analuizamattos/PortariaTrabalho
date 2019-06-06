@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Concierge Work</string>
+    <string name="nome">Name</string>
+    <string name="senha">Password</string>
+    <string name="lembrar_senha">Remember Password</string>
+    <string name="entrar">Login</string>
+    <string name="criar_conta">Create an Account</string>
+    <string name="digite_seu_nome">Type Your Name</string>
+    <string name="digite_sua_senha">Type Your Password</string>
+    <string name="title_activity_cadastro_login">CadastroLoginActivity</string>
+    <string name="cancelar">Cancel</string>
+    <string name="button">Button</string>
+    <string name="criar">Create</string>
+    <string name="email">Email</string>
+    <string name="confirme_senha">Confirm Password</string>
+    <string name="sobrenome">Last Name</string>
+    <string name="placa_do_carro">License Plate</string>
+    <string name="salvar">SAVE</string>
+    <string name="pessoas_autorizadas">Authorized Persons</string>
+    <string name="lista_de_pessoas_autorizadas">Authorized Persons List</string>
+    <string name="inserir_autoriza_o">Insert Authorization</string>
+    <string name="cadastro_de_visitante">Visit Register</string>
+    <string name="rg">RG</string>
+    <string name="sair">LogOut</string>
+</resources>
