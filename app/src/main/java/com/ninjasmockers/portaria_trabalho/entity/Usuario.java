@@ -1,3 +1,5 @@
+package com.ninjasmockers.portaria_trabalho.entity;
+
 public class Usuario {
 	private Integer id;
 	private String nome;
