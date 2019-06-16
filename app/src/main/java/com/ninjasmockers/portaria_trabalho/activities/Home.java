@@ -5,14 +5,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.ninjasmockers.portaria_trabalho.R;
 
 public class Home extends AppCompatActivity {
+private DatabaseReference referencia = FirebaseDatabase.getInstance().getReference();
+private DatabaseReference usuarios = referencia.child("usuarios");
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        /*referencia.child("pontos").setValue("100");
+        referencia.child("produtos").child("001").child("descricao").setValue("IfoneX");
+*/
+
 
     }
     protected void inserir(View view){

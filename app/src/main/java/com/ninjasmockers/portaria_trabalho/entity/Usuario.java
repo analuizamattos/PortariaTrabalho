@@ -4,6 +4,25 @@ public class Usuario {
 	private Integer id;
 	private String nome;
 	private String sobrenome;
+	private String email, telefone;
+
+	
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
 
 	public Integer getId() {
 		return this.id;

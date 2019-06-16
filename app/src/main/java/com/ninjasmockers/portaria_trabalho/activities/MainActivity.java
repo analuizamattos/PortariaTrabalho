@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.firebase.database.FirebaseDatabase;
 import com.ninjasmockers.portaria_trabalho.config.Preferencias;
 import com.ninjasmockers.portaria_trabalho.R;
 import com.ninjasmockers.portaria_trabalho.tasks.DownloadTask;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView jokeText;
     private TextInputEditText nomeDigitado;
     private ImageView imagem;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,8 +50,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void cadastroLogin(View view){
+
         startActivity(new Intent(this,CadastroLogin.class));
     }
+
+
     public void goHome(View view){
         nomeDigitado = findViewById(R.id.TextInputNome);
         preferencias.salvarAnotacao(nomeDigitado.getText().toString());
