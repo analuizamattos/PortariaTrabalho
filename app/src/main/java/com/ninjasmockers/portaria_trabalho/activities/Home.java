@@ -8,6 +8,7 @@ import android.view.View;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.ninjasmockers.portaria_trabalho.R;
+import com.ninjasmockers.portaria_trabalho.entity.Usuario;
 
 public class Home extends AppCompatActivity {
 private DatabaseReference referencia = FirebaseDatabase.getInstance().getReference();
@@ -21,8 +22,13 @@ private DatabaseReference usuarios = referencia.child("usuarios");
 
         /*referencia.child("pontos").setValue("100");
         referencia.child("produtos").child("001").child("descricao").setValue("IfoneX");
-*/
 
+
+
+*/
+        Usuario usuario = new Usuario("Douglas","Angelo");
+
+        referencia.child("usuarios").push().setValue(usuario);
 
     }
     protected void inserir(View view){

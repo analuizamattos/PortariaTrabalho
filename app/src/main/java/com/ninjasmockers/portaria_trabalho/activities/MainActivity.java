@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 import com.ninjasmockers.portaria_trabalho.config.Preferencias;
 import com.ninjasmockers.portaria_trabalho.R;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView jokeText;
     private TextInputEditText nomeDigitado;
     private ImageView imagem;
+    //private FirebaseAuth autenticacao = FirebaseAuth.getInstance();
 
 
     @Override

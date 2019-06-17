@@ -2,26 +2,12 @@ package com.ninjasmockers.portaria_trabalho.entity;
 
 public class Usuario {
 	private Integer id;
-	private String nome;
-	private String sobrenome;
-	private String email, telefone;
+	private String sobrenome, nome;
 
-	
 
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getTelefone() {
-		return telefone;
-	}
-
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
+	public Usuario(String nome, String sobrenome) {
+		this.nome = nome;
+		this.sobrenome = sobrenome;
 	}
 
 	public Integer getId() {
