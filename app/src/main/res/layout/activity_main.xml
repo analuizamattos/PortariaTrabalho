@@ -19,8 +19,8 @@
             android:layout_marginBottom="12dp"
             android:src="@drawable/android"
             app:layout_constraintBottom_toTopOf="@+id/textViewNome"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textViewNome"
+            app:layout_constraintStart_toStartOf="@+id/textViewNome"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -32,8 +32,8 @@
             android:textColor="@android:color/black"
             android:textSize="14sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/switch1"
+            app:layout_constraintStart_toStartOf="@+id/switch1"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
         <Switch
@@ -47,8 +47,8 @@
             android:layout_marginRight="8dp"
             android:checked="false"
             android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/entrar"
+            app:layout_constraintStart_toStartOf="@+id/entrar"
             app:layout_constraintTop_toBottomOf="@+id/lembrarsenha" />
 
         <Button
@@ -66,9 +66,9 @@
             android:textColor="@android:color/black"
             android:textSize="14sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/criarconta"
             app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/criarconta"
             app:layout_constraintTop_toBottomOf="@+id/switch1" />
 
         <Button
@@ -86,9 +86,9 @@
             android:textColor="@android:color/black"
             android:textSize="14sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/jokeText"
             app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/jokeText"
             app:layout_constraintTop_toBottomOf="@+id/entrar" />
 
         <TextView
@@ -100,8 +100,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:text="Seja bem vindo!"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
         <android.support.design.widget.TextInputLayout
@@ -114,8 +114,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
 
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
             app:layout_constraintTop_toBottomOf="@+id/textViewNome">
 
             <android.support.design.widget.TextInputEditText
@@ -139,8 +139,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
 
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/lembrarsenha"
+            app:layout_constraintStart_toStartOf="@+id/lembrarsenha"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
             <android.support.design.widget.TextInputEditText

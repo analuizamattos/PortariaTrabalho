@@ -11,8 +11,8 @@ import com.ninjasmockers.portaria_trabalho.R;
 import com.ninjasmockers.portaria_trabalho.entity.Usuario;
 
 public class Home extends AppCompatActivity {
-private DatabaseReference referencia = FirebaseDatabase.getInstance().getReference();
-private DatabaseReference usuarios = referencia.child("usuarios");
+    private DatabaseReference referencia = FirebaseDatabase.getInstance().getReference();
+    private DatabaseReference usuarios = referencia.child("usuarios");
 
 
     @Override
@@ -26,15 +26,17 @@ private DatabaseReference usuarios = referencia.child("usuarios");
 
 
 */
-        Usuario usuario = new Usuario("Douglas","Angelo");
+        Usuario usuario = new Usuario("Douglas", "Angelo");
 
         referencia.child("usuarios").push().setValue(usuario);
 
     }
-    protected void inserir(View view){
-        startActivity(new Intent(this,CadastroVisitante.class));
+
+    protected void inserir(View view) {
+        startActivity(new Intent(this, CadastroVisitante.class));
     }
-    protected void sair(View view){
-        startActivity(new Intent(this,MainActivity.class));
+
+    protected void sair(View view) {
+        startActivity(new Intent(this, MainActivity.class));
     }
 }
