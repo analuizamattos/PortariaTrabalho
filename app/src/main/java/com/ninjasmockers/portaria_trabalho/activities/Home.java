@@ -5,14 +5,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.ninjasmockers.portaria_trabalho.R;
 import com.ninjasmockers.portaria_trabalho.entity.Usuario;
 
 public class Home extends AppCompatActivity {
-    private DatabaseReference referencia = FirebaseDatabase.getInstance().getReference();
-    private DatabaseReference usuarios = referencia.child("usuarios");
+    private FirebaseAuth autenticacao;
+
+   // private DatabaseReference referencia = FirebaseDatabase.getInstance().getReference();
+    //private DatabaseReference usuarios = referencia.child("usuarios");
 
 
     @Override
@@ -26,9 +29,9 @@ public class Home extends AppCompatActivity {
 
 
 */
-        Usuario usuario = new Usuario("Douglas", "Angelo");
+        //Usuario usuario = new Usuario("Douglas", "Angelo");
 
-        referencia.child("usuarios").push().setValue(usuario);
+        //referencia.child("usuarios").push().setValue(usuario);
 
     }
 
@@ -38,5 +41,6 @@ public class Home extends AppCompatActivity {
 
     protected void sair(View view) {
         startActivity(new Intent(this, MainActivity.class));
+        //autenticacao.signOut();
     }
 }

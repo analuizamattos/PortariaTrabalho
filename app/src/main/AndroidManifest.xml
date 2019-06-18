@@ -13,10 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.CadastroVisitante"></activity>
+        <activity android:name=".activities.MainActivity"></activity>
+        <activity android:name=".activities.CadastroVisitante" />
         <activity android:name=".activities.Home" />
         <activity android:name=".activities.CadastroLogin" />
-        <activity android:name=".activities.MainActivity">
+        <activity android:name=".activities.Telainicial">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
