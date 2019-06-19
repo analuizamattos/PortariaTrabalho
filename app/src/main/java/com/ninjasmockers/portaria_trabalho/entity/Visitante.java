@@ -3,8 +3,8 @@ package com.ninjasmockers.portaria_trabalho.entity;
 public class Visitante extends Usuario{
 private String placaCarro,modeloCarro,rg;
 
-    public Visitante(String nome, String sobrenome, String telefone, String placaCarro, String modeloCarro, String rg) {
-        super(nome, sobrenome);
+    public Visitante(String nome, String lote, String id, String placaCarro, String modeloCarro, String rg) {
+        super(nome, lote, id);
         this.placaCarro = placaCarro;
         this.modeloCarro = modeloCarro;
         this.rg = rg;

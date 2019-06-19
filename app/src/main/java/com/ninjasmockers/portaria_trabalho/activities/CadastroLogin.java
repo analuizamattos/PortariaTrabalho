@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -19,15 +20,22 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.ninjasmockers.portaria_trabalho.R;
 import com.ninjasmockers.portaria_trabalho.config.Configuracaofirebase;
+import com.ninjasmockers.portaria_trabalho.dao.helpers.Base64Custom;
 import com.ninjasmockers.portaria_trabalho.dao.helpers.DBHelper;
+import com.ninjasmockers.portaria_trabalho.entity.Lote;
+import com.ninjasmockers.portaria_trabalho.entity.Morador;
 import com.ninjasmockers.portaria_trabalho.entity.Usuario;
 import com.ninjasmockers.portaria_trabalho.entity.UsuarioLogin;
 
 public class CadastroLogin extends AppCompatActivity {
     private FirebaseAuth autenticacao;
-    private EditText campoNome, campoEmail, campoSenha;
+    private EditText campoNome, campoEmail, campoSenha,campoLote,campoTelefone,campoCelular;
     private Button botaoCadastar;
     private UsuarioLogin usuario;
+    private Morador morador;
+    private Lote lote;
+
+
 
 
     @Override
@@ -38,6 +46,9 @@ public class CadastroLogin extends AppCompatActivity {
         campoEmail = findViewById(R.id.editEmailId);
         campoSenha = findViewById(R.id.editSenhaId);
         botaoCadastar = findViewById(R.id.btCriar);
+        campoLote = findViewById(R.id.editNomeLote);
+        campoTelefone = findViewById(R.id.editNomeTelefone );
+        campoCelular = findViewById(R.id.editNomeCelular);
 
 
         botaoCadastar.setOnClickListener(new View.OnClickListener() {
@@ -46,13 +57,21 @@ public class CadastroLogin extends AppCompatActivity {
                 String textoNome = campoNome.getText().toString();
                 String textoEmail = campoEmail.getText().toString();
                 String textoSenha = campoSenha.getText().toString();
+                String textoLote = campoLote.getText().toString();
+                String textoTefone = campoTelefone.getText().toString();
+                String textoCelular = campoCelular.getText().toString();
 
-                if (validarCampos(textoEmail) == true & validarCampos(textoSenha) == true) {
+                if (validarCampos(textoEmail) == true & validarCampos(textoSenha) == true & validarCampos(textoNome) == true  & validarCampos(textoLote) == true
+                        & validarCampos(textoTefone) == true  & validarCampos(textoCelular) == true ) {
+                    morador = new Morador(textoNome,textoLote, Base64Custom.codificarBase64(textoEmail),textoEmail, textoCelular, textoTefone);
+                    lote = new Lote(Base64Custom.codificarBase64(textoEmail), textoLote);
                     usuario = new UsuarioLogin();
                     usuario.setNome(textoNome);
                     usuario.setEmail(textoEmail);
                     usuario.setSenha(textoSenha);
                     cadastrarUsuario();
+                   // morador.salvarnoFirebase();
+                   // lote.salvarnoFirebase();
                 }
 
             }
@@ -75,6 +94,7 @@ public class CadastroLogin extends AppCompatActivity {
     }
 
     public void cadastrarUsuario() {
+
         autenticacao = Configuracaofirebase.getAutenticacao();
         autenticacao.createUserWithEmailAndPassword(usuario.getEmail(), usuario.getSenha())
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -89,6 +109,7 @@ public class CadastroLogin extends AppCompatActivity {
             }
         });
     }
+
 }
 /* } else if (validarCampos(textoNome) == true) {
 

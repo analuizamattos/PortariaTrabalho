@@ -34,7 +34,7 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(NOME, usuario.getNome());
-        values.put(SENHA, usuario.getSobrenome());
+
         long success = db.insert(USUARIO, null, values);
         db.close();
         return success != -1L;

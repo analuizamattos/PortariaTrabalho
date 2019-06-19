@@ -13,10 +13,12 @@ public class Morador extends Usuario {
         firebase.child("usuarios").child(this.id).setValue(this);
     }
 
-
-
-
-
+    public Morador(String nome, String lote, String id, String email, String celular, String telefone) {
+        super(nome, lote, id);
+        this.email = email;
+        this.celular = celular;
+        this.telefone = telefone;
+    }
 
     public String getEmail() {
         return email;
@@ -50,8 +52,5 @@ public class Morador extends Usuario {
         this.ativo = ativo;
     }
 
-    public Morador(String nome, String sobrenome, String email) {
-        super(nome, sobrenome);
-        this.email = email;
-    }
+
 }

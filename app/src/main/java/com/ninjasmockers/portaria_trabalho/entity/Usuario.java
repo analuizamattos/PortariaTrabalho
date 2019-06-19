@@ -1,12 +1,21 @@
 package com.ninjasmockers.portaria_trabalho.entity;
 
 public class Usuario {
-    protected String sobrenome, nome, id;
+    protected String nome,lote;
+    protected String id;
 
-
-    public Usuario(String nome, String sobrenome) {
+    public Usuario(String nome, String lote, String id) {
         this.nome = nome;
-        this.sobrenome = sobrenome;
+        this.lote = lote;
+        this.id = id;
+    }
+
+    public String getLote() {
+        return lote;
+    }
+
+    public void setLote(String lote) {
+        this.lote = lote;
     }
 
     public String getId() {
@@ -25,11 +34,4 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public String getSobrenome() {
-        return this.sobrenome;
-    }
-
-    public void setSobrenome(String sobrenome) {
-        this.sobrenome = sobrenome;
-    }
 }
